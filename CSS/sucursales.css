@@ -1,0 +1,48 @@
+.titulo-sucursales {
+  text-align: center;
+  font-size: 2.2rem;
+  color: #07592B;
+  margin-bottom: 10px;
+  font-weight: bold;
+}
+
+.linea-final {
+  width: 80px;
+  height: 4px;
+  background-color: #07592B;
+  border: none;
+  margin: 0 auto 30px auto;
+  border-radius: 2px;
+}
+
+.sucursales-section {
+  padding: 60px 20px;
+  background: linear-gradient(135deg, #ffffff, #f1f1f1);
+}
+
+.sucursal {
+  border-radius: 12px;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  margin-bottom: 20px;
+}
+
+.sucursal:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 20px rgba(0,0,0,0.15);
+}
+
+.sucursal h4 a {
+  color: #07592B;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.sucursal h4 a:hover {
+  color: #0a7a3b;
+  text-decoration: underline;
+}
+
+.sucursal p {
+  color: #555;
+  margin: 0;
+}

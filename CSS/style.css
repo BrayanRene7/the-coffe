@@ -1,0 +1,295 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+
+.header {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    background-color: #07592b;
+    z-index: 1000;
+}
+.header-image img {
+    width: 120px;  
+    height: 120px; 
+
+}
+.header-content {
+    display: flex;
+    align-items: center;
+    padding: 1rem;
+    flex-wrap: wrap;
+}
+
+.nav-menu {
+    display: flex;
+    gap: 20px;
+}
+
+.nav-menu a {
+    color: white;
+    text-decoration: none;
+    padding: 10px 20px;
+    border: 2px solid white;
+    border-radius: 20px;
+    transition: all 0.3s;
+    display: flex;
+    justify-content: flex-start;
+    gap: 8px;
+    cursor: pointer;
+}
+
+.nav-menu a:hover,
+.nav-menu a.active {
+    background-color: white;
+    color: #07592B;
+}
+
+.nav-menud{ 
+    display: flex;
+    gap: 20px;}
+.nav-menud a {
+    color: white;
+    text-decoration: none;
+    padding: 10px 20px;
+    border: 2px solid white;
+    border-radius: 20px;
+    transition: all 0.3s;
+    display: flex;
+    gap: 8px;
+    cursor: pointer;
+    }
+    
+.nav-menud a:hover,
+.nav-menud a.active {
+    background-color: white;
+     color: #07592B;}
+
+html, body {
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden;     
+    overflow-y: auto;     
+    width: 100%;
+    height: 100%;
+    
+}
+
+
+.grid-center {
+    display: center;
+    min-height: 50vh;}
+
+.div-contenido {
+    padding: 1rem;
+    max-width: 100%;
+    background-color: #f0f0f0;
+    border-radius: 8px;
+}
+.margin-center {
+    width: 100%;
+    margin: 0 auto;
+}
+
+
+.linea-final {
+    width: 100%;
+    height: 2px;
+    background-color: #333;
+    margin: 20px 0;
+    border: none;
+}
+
+
+.linea-final {
+    width: 100%;
+    height: 2px;
+    background: linear-gradient(to right, transparent, #333, transparent);
+    margin: 20px 0;
+    border: none;
+}
+
+
+.linea-final {
+    width: 100%;
+    height: 1px;
+    background-color: #333;
+    margin: 20px 0;
+    border: none;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+
+
+.linea-final {
+    width: 100%;
+    height: 3px;
+    background-color: #07592B; 
+    margin: 30px 0;
+    border: none;
+    box-shadow: 0 2px 4px rgba(7, 89, 43, 0.2);
+}
+
+
+.footer {
+    background-color: #07592B;
+    color: white;
+    padding: 40px 0 20px;
+    margin-top: 50px;
+}
+
+.footer-content {
+    max-width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    padding: 0 20px;
+    gap: 30px;
+}
+
+.footer-section {
+    flex: 1;
+    min-width: 250px;
+}
+
+.footer-section h3 {
+    margin-bottom: 20px;
+    font-size: 1.2em;
+}
+
+.footer-section ul {
+    list-style: none;
+    padding: 0;
+}
+
+.footer-section ul li {
+    margin-bottom: 10px;
+}
+
+.footer-section a {
+    color: white;
+    text-decoration: none;
+    transition: color 0.3s;
+}
+
+.footer-section a:hover {
+    color: #ddd;
+}
+
+
+.social-links {
+    display: flex;
+    gap: 15px;
+}
+
+.social-links a {
+    font-size: 1.5em;
+}
+
+
+.footer-divider {
+    border: none;
+    height: 1px;
+    background-color: rgba(255,255,255,0.2);
+    margin: 30px 20px;
+}
+
+
+.footer-bottom {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.footer-legal {
+    display: flex;
+    gap: 20px;
+}
+
+.copyright {
+    font-size: 0.9em;
+}
+@media (max-width: 768px) {
+    .footer-content {
+        flex-direction: column;
+        gap: 40px;
+    }
+
+    .footer-section {
+        text-align: center;
+    }
+
+    .social-links {
+        justify-content: center;
+    }
+
+    .footer-bottom {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .footer-legal {
+        flex-direction: column;
+        gap: 10px;
+    }
+}
+
+.nav-wrapper {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+}
+
+.nav-toggle {
+    display: none;
+}
+
+/* Media queries para responsividad */
+@media (max-width: 768px) {
+    .nav-toggle {
+        display: block;
+        background: none;
+        border: none;
+        font-size: 1.5rem;
+        cursor: pointer;
+    }
+
+    .nav-wrapper {
+        display: none;
+        width: 100%;
+        flex-direction: column;
+    }
+
+    .nav-wrapper.active {
+        display: flex;
+    }
+
+    .nav-menu, .nav-menud {
+        flex-direction: column;
+        align-items: center;
+        width: 100%;
+    }
+
+    .footer-content {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .footer-section {
+        width: 100%;
+        margin-bottom: 2rem;
+    }
+}
+.carousel-inner img {
+    max-width: 100%;
+    height: auto;
+}
