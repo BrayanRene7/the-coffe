@@ -27,6 +27,8 @@
 }
 .nosotros-section {
   padding: 60px 20px;
+  padding-top: 100px;
+  margin-top: 20px;
   background: linear-gradient(135deg, #ffffff, #f1f1f1);
 }
 
